@@ -4,7 +4,14 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: `Theo Blochet`,
+    siteTitleAlt: `Theo Blochet`,
+    siteHeadline: `Theo's personal blog`,
+    siteImage: `null.jpg`,
+    siteUrl:`https://www.google.com`,
+    siteDescription: `Theo's personal blog`,
+    siteLanguage: `en`,
+    author: `@theoblochet`,
   },
   plugins: [
     {
@@ -24,11 +31,11 @@ module.exports = {
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/theoblochet`,
           },
           {
             name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            url: `https://www.instagram.com/theoblt/`,
           },
         ],
       },
