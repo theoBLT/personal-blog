@@ -4,8 +4,8 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitle: `Theo Blochet`,
-    siteTitleAlt: `Theo Blochet`,
+    siteTitle: `Théo Blochet`,
+    siteTitleAlt: `Théo Blochet`,
     siteHeadline: `Theo's personal blog`,
     siteImage: `null.jpg`,
     siteUrl:`https://www.google.com`,
