@@ -13,7 +13,7 @@ To go one step further, I wanted to email myself the new words I learn - one new
 
 ![Screenshot of the email I get everyday from Airtable](./airtable_email.png)
 
-Here's how it works. In the table in whcih I record the words I learn:
+Here's how it works. In the table with all the words I've learned:
 
 * I give each word a `schedule_delay`, which has a value of "1" for the first word, "2" for the second word, etc. The field uses Airtable's **Autonumber** field type to automatically increment that number.
 * I then take a starting date (Nov. 4), and give each word a unique publication date by incrementing that starting date with the word's `schedule_delay` (Using the **Formula** field type and formula `DATEADD('2020-11-04',schedule_delay,'days')` ).
