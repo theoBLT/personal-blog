@@ -15,13 +15,13 @@ Logging the below as an ongoing friction log of my writing process.
 
 1. Create a new folder inside my `posts` folder
 
-1. come up with a name for the folder and save it
+1. Come up with a name for the folder and save it
 
-1. Copy paste an existing `index.mdx`
+1. Create a new file called `index.mdx` inside the folder
+
+1. Use an Alfred snippet ( `&article`) to auto-generate the article metadata with today's date
 
 1. Update the title inside the top section
-
-1. Find out today's date, update the date to today's date
 
 1. Give the article a creative title
 
@@ -39,7 +39,9 @@ Logging the below as an ongoing friction log of my writing process.
 
 1. `Git status` to see where I'm at
 
-1. `git add * && commit -m`
+1. `git add *`
+
+1. `git commit -m`
 
 1. `git push origin master`
 
@@ -51,6 +53,8 @@ Logging the below as an ongoing friction log of my writing process.
 
 1. I can't write those ideas on mobile, wherever I am. I have to be sitting down, use my personal macbook, hoping it still has battery
 
+1. I can't easily know which tags already exist to organize my new articles by
+
 ### What _does_ work
 
 1. Using Markdown code as configuration means I'm super flexible in my choice of data organization and layout. If I want to bring this blog elsewhere, I broadly can copy paste my folder.
@@ -59,6 +63,9 @@ Logging the below as an ongoing friction log of my writing process.
 
 1. I can iterate on the process to make publishing stuff faster. I wouldn't have that flexibility with a self-hosted wordpress (and, would need to use PHP!)
 
+1. I have full CSS control on the blog. Can give it _any_ style or custom component I want.
+
 ### Changelog
 
-1. Stay tuned!
+**2022-01-29 | 17 steps → 17 steps**
+Created an Alfred snippet workflow which lets me write `&article` and auto-generate the metadata scaffolding for a new article. The snippet auto-populates with today's date, thanks to [Alfred's advanced dynamic placeholders](https://www.alfredapp.com/help/workflows/advanced/placeholders/).
