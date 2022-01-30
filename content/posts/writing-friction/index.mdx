@@ -16,23 +16,11 @@ Logging the below as an ongoing friction log of my writing process.
 
 1. Create a new folder inside my `posts` folder
 
-1. Come up with a name for the folder and save it
-
 1. Create a new file called `index.mdx` inside the folder
 
-1. Use an Alfred snippet ( `&article`) to auto-generate the article metadata with today's date
+1. Type an Alfred snippet ( `&article`) to generate the article metadata
 
-1. Update the title inside the top section
-
-1. Give the article a creative title
-
-1. Give it a description
-
-1. Add tags
-
-1. Save file
-
-1. Re-start my server to preview the article
+1. Give the article a title
 
 1. **Now**, start writing
 
@@ -40,11 +28,7 @@ Logging the below as an ongoing friction log of my writing process.
 
 1. `Git s` to see where I'm at
 
-1. `git aa` to stage all files
-
-1. `git c "my commit here"` to commit files
-
-1. `git p` to push it all to remote and deploy via netlify
+1. `publish` to publish all articles
 
 
 ### Steps to start writing 
@@ -84,7 +68,7 @@ Created an Alfred snippet workflow which lets me write `&article` and auto-gener
 **2022-01-30 | 17 steps → 17 steps**
 Moved all my blog's code to be stored on iCloud, which lets me edit my markdown files with iAWriter! Makes for a surprisingly great editing experience, which _also_ works on mobile! ✨
 
-**2022-01-30 | 17 steps → 17 steps**
+**2022-01-30 | 17 steps → 9 steps**
 * Starting a coffee shop playlist on the living room's Sonos every day at 7:30am (stops at 8:50am for my wife to start her remote work day at 9am), using [Alexa Routines](https://www.amazon.com/gp/help/customer/display.html?nodeId=202200080). 
 * Added a new rule for my `.gitignore` so that folders starting in `draft-` aren't committed to the repository. This lets me have drafts on iCloud that only get pushed to the repo once ready, giving me a draft → publish workflow! ✨
 * [Created aliases](http://git-scm.com/docs/git-config#Documentation/git-config.txt-alias)to [make my git workflow more productive](https://snyk.io/blog/10-git-aliases-for-faster-and-productive-git-workflow/):
@@ -103,9 +87,11 @@ git aa && git c 'Article updates' && git p
 #article updates for blog
 alias publish="git aa && git c 'Article updates' && git p"
 ```
+* Removed optional steps like adding a description or tags.
 
 TODOs:
 
 * Create a writer's corner: a spot that's different from my normal work station, where I look forward to sitting down and writing. 
 * Buy a mechanical keyboard to alleviate finger pain. 
 * Set up automated lighting to wake up in my writing corner at the same time the music does. 
+* Change the command for `publish` so it only stages the content inside the `posts` folder, not the rest
