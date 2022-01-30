@@ -70,3 +70,6 @@ public
 .idea
 .vscode
 .DS_Store
+
+# Draft articles 
+draft-*
