@@ -1,6 +1,6 @@
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
 module.exports = {
   siteMetadata: {
@@ -8,7 +8,7 @@ module.exports = {
     siteTitleAlt: `Théo Blochet`,
     siteHeadline: `Theo's personal blog`,
     siteImage: `null.jpg`,
-    siteUrl:`https://www.google.com`,
+    siteUrl: `https://www.theoblochet.com`,
     siteDescription: `Theo's personal blog`,
     siteLanguage: `en`,
     author: `@theoblochet`,
@@ -44,7 +44,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
-        head:true,
+        head: true,
       },
     },
     `gatsby-plugin-sitemap`,
@@ -75,4 +75,4 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
   ],
-}
+};
