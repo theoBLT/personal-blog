@@ -96,7 +96,12 @@ git config --global alias.p "push origin master"
 ```
 * Chained all the commands: instead of 3 git commands I have one:
 ``` bash
-git aa && git c "Article updates" && git p
+git aa && git c 'Article updates' && git p
+```
+* Mapped the `publish` alias to write the line required to publish all articles for me. Steps: edited my config file (`nano ~/.zshrc`) with the code below, then, save using `ctrl + X` → `Y` → `enter`, and reloaded using `source ~/.zshrc`. 
+``` txt
+#article updates for blog
+alias publish="git aa && git c 'Article updates' && git p"
 ```
 
 TODOs:
