@@ -38,13 +38,13 @@ Logging the below as an ongoing friction log of my writing process.
 
 1. When happy with what I wrote, open a new terminal window
 
-1. `Git status` to see where I'm at
+1. `Git s` to see where I'm at
 
-1. `git add *`
+1. `git aa` to stage all files
 
-1. `git commit -m`
+1. `git c "my commit here"` to commit files
 
-1. `git push origin master`
+1. `git p` to push it all to remote and deploy via netlify
 
 
 ### Steps to start writing 
@@ -87,14 +87,17 @@ Moved all my blog's code to be stored on iCloud, which lets me edit my markdown 
 **2022-01-30 | 17 steps → 17 steps**
 * Starting a coffee shop playlist on the living room's Sonos every day at 7:30am (stops at 8:50am for my wife to start her remote work day at 9am), using [Alexa Routines](https://www.amazon.com/gp/help/customer/display.html?nodeId=202200080). 
 * Added a new rule for my `.gitignore` so that folders starting in `draft-` aren't committed to the repository. This lets me have drafts on iCloud that only get pushed to the repo once ready, giving me a draft → publish workflow! ✨
-* Using [git aliases](https://snyk.io/blog/10-git-aliases-for-faster-and-productive-git-workflow/) I [created aliases](http://git-scm.com/docs/git-config#Documentation/git-config.txt-alias) via the command line, letting me speed up adding / committing / pushing files
+* [Created aliases](http://git-scm.com/docs/git-config#Documentation/git-config.txt-alias)to [make my git workflow more productive](https://snyk.io/blog/10-git-aliases-for-faster-and-productive-git-workflow/):
 ``` bash
 git config --global alias.s "status"
-git config --global alias.p "push origin master"
 git config --global alias.aa "add *"
 git config --global alias.c "commit -m"
+git config --global alias.p "push origin master"
 ```
-
+* Chained all the commands: instead of 3 git commands I have one:
+``` bash
+git aa && git c "Article updates" && git p
+```
 
 TODOs:
 
